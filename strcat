@@ -1,0 +1,12 @@
+      scanf("%s", bookconcern);
+      sql = "update tb_book set bookname = '";
+      strcat(dest1, sql);
+      strcat(dest1, bookname);
+      strcat(dest1, "',author = '");
+      strcat(dest1, author);
+      strcat(dest1, "',bookconcern = '");
+      strcat(dest1, bookconcern);
+      strcat(dest1, "' where ID = '");
+      strcat(dest1, id);
+      strcat(dest1, "'");
+      if (mysql_query(&mysql,dest1)) printf
