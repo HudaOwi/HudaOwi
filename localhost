@@ -1,0 +1,8 @@
+void ModifyBook() {
+ system("cls");
+ char dest[100];
+ mysql_init(&mysql);
+ mysql_query(&mysql, "set name 'utf8'");
+ if (!mysql_real_connect(&mysql, "localhost", "root", "xin088748*", "db_book", 0, NULL, 0)) { puts("can't net mysql\n");
+ return;
+ }
