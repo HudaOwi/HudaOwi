@@ -1,0 +1,6 @@
+   public double getNumber() throws IOException {
+      InputStreamReader isr = new InputStreamReader(System.in);
+      BufferedReader inData = new BufferedReader(isr);
+      String str;
+      str = inData.readLine();
+      return (new Double(str)).doubleValue();
