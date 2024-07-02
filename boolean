@@ -1,0 +1,4 @@
+protected boolean doRemoveUser(String userId) throws UserProfileResourceException { 
+		 
+		System.out.println("SampleUserManagerImpl.doRemoveUser - This operation is not implemented !");  
+		return false; 
